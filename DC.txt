@@ -1,0 +1,29 @@
+docker --version
+
+sudo apt install docker.io
+
+sudo systemctl enable docker
+
+sudo systemctl start docker 
+
+sudo docker run hello-world
+
+sudo docker pull OpenJDK
+
+sudo docker images
+
+sudo docker run --name JAVA -it -d OpenJDK
+
+sudo docker exec -it JAVA jshell
+
+>System.out.println ("Hello")
+
+>/exit
+
+sudo docker stop JAVA 
+
+sudo docker rm JAVA
+
+sudo systemctl stop docker
+
+sudo systemctl disable docker 

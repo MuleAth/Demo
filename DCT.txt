@@ -1,0 +1,30 @@
+1.	docker --version: This command simply displays the version of Docker installed on your system.
+
+2.	sudo apt install docker.io: This installs Docker on your system using the apt package manager. sudo is used to execute the command with superuser privileges.
+
+3.	sudo systemctl enable docker: This command enables the Docker service to start automatically on system boot.
+
+4.	sudo systemctl start docker: This starts the Docker service.
+
+5.	sudo docker run hello-world: This command downloads a test Docker image called "hello-world" and runs a container based on that image. It's often used to verify that Docker is installed and working correctly.
+
+6.	sudo docker pull OpenJDK: This command pulls the Docker image for the OpenJDK (Java Development Kit) from the Docker Hub registry. This image contains the OpenJDK runtime environment.
+
+7.	sudo docker images: This command lists all Docker images that are currently downloaded on your system.
+
+8.	sudo docker run --name JAVA -it -d OpenJDK: This command runs a Docker container based on the OpenJDK image in detached mode (-d), meaning it runs in the background. The -it flags allocate a pseudo-TTY and keep STDIN open even if not attached, allowing interactive access. The --name JAVA option assigns the name "JAVA" to the container.
+
+9.	sudo docker exec -it JAVA jshell: This command allows you to execute an interactive shell (jshell, which is the Java Shell) inside the running Docker container named "JAVA". This lets you interact with the Java environment within the container.
+
+10.	>System.out.println ("Hello"): This is a command that you would enter in the Java shell to print "Hello" to the console. It demonstrates basic Java functionality within the Docker container.
+
+11.	>/exit: This command exits the Java shell.
+
+12.	sudo docker stop JAVA: This command stops the Docker container named "JAVA".
+
+13.	sudo docker rm JAVA: This command removes (deletes) the Docker container named "JAVA".
+
+14.	sudo systemctl stop docker: This stops the Docker service.
+
+15.	sudo systemctl disable docker: This command disables the Docker service from starting automatically on system boot.
+

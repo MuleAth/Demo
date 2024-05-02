@@ -1,0 +1,38 @@
+Node js 
+
+
+Create a Node folder
+
+go to the terminal 
+
+npm init
+
+npm install express 
+(package.json)
+
+create index.js in Node
+
+code in index.js
+
+const express =require('express');
+const app=express ();
+
+app.use(express.static('public'))
+
+app.listen(4000, () => {
+    console.log("server is started");
+})
+
+create a public folder in node
+
+create index.html         ------> To a server
+
+write the cotent in index.html
+
+then check the directory of index.js 
+
+go to the terminal and 
+
+node index.js
+
+go to the browser and write localhost:4000
